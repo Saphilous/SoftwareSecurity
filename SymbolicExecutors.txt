@@ -1,0 +1,7 @@
+KLEE - A symbolic executor for LLVM bitcode (primarily supporting C and C++)
+
+Otter - A source-level symbolic executor for C code
+
+Pex - A symbolic executor for .NET
+
+SAGE - A 10-minute video on the SAGE whitebox fuzz tester (based on symbolic execution)
