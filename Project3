@@ -1,0 +1,34 @@
+Number of iterations took by fuzzinput is 255
+
+The string that crashed the program is 255aaaaaaaa
+
+ktest file : 'klee-last/test000001.ktest'
+args       : ['wisdom-alt-sym.o']
+num objects: 2
+object    0: name: 'buf'
+object    0: size: 20
+object    0: data: '\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+object    1: name: 'r'
+object    1: size: 4
+object    1: data: '\x00\x00\x00\x00'
+
+<!-- THE MAZE TEST -->
+command:
+ls -1 klee-last | grep -A2 -B2 err
+
+results:
+test000080.ktest
+test000081.ktest
+test000082.assert.err
+test000082.ktest
+test000082.pc
+
+K-test sol:
+ktest-tool.cde klee-last/test000082.ktest
+ktest file : 'klee-last/test000082.ktest'
+args       : ['maze-sym.o']
+num objects: 1
+object    0: name: 'program'
+object    0: size: 28
+object    0: data: 'ssssddddwwaawwddddsddw\x00\x00\x00\x00\x00\x00'
+
