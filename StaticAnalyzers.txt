@@ -1,0 +1,9 @@
+Static analyzers
+
+Coverity's free Code Spotter and Coverity Scan initiatives
+
+Clang Analyzer - A static analyzer built on the LLVM framework for C and C++ programs
+
+Joern - A static analyzer for C and C++ programs
+
+FindBugs - A static analyzer for Java programs
